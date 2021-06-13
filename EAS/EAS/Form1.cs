@@ -12,9 +12,78 @@ namespace EAS
 {
     public partial class Form1 : Form
     {
+        public bool login = false;
+        public string number;
+        public int user = 0;    //1管理员，2学生，3教师
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //label1.Left = (this.ClientSize.Width - label1.Width) / 2;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text == "")
+            {
+                MessageBox.Show("请输入账号");
+            }
+            else if (radioButton1.Checked || radioButton2.Checked|| radioButton3.Checked)
+            {
+                string name = textBox1.Text.Trim();
+                if (radioButton1.Checked)    //管理员被选中
+                {
+                    if (name == "root")
+                    {
+                        this.Close();
+                        login = true;
+                        number = "root";
+                        user = 1;
+                    }
+                    else
+                    {
+                        MessageBox.Show("账号错误！");
+                        textBox1.Focus();   //用户名文本框获得输入光标焦点
+                    }
+                }
+                else if (radioButton2.Checked)   //选择学生
+                {
+                    if (name == "student")
+                    {
+                        this.Close();
+                        login = true;
+                        number = "root";
+                        user = 2;
+                    }
+                    else
+                    {
+                        MessageBox.Show("登录失败！");
+                        textBox1.Focus();   //用户名文本框获得输入光标焦点
+                    }
+                }
+                else if (radioButton3.Checked)   //选择学生
+                {
+                    if (name == "teacher")
+                    {
+                        this.Close();
+                        login = true;
+                        number = "root";
+                        user = 3;
+                    }
+                    else
+                    {
+                        MessageBox.Show("登录失败！");
+                        textBox1.Focus();   //用户名文本框获得输入光标焦点
+                    }
+                }
+            }
+            else  //都没有选中
+            {
+                MessageBox.Show("请选择登录身份");
+            }
         }
     }
 }

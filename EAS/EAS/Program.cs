@@ -6,6 +6,7 @@ using System.Windows.Forms;
 
 namespace EAS
 {
+    
     static class Program
     {
         /// <summary>
@@ -16,7 +17,14 @@ namespace EAS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 loginInterface = new Form1();
+            Application.Run(loginInterface);
+            if (loginInterface.login)
+            {
+                if(loginInterface.user==1)Application.Run(new Manger(loginInterface.number));
+                else if (loginInterface.user == 2) { Application.Run(new Student(loginInterface.number)); }
+                else if (loginInterface.user == 3) { Application.Run(new Teacher(loginInterface.number)); }
+            }
         }
     }
 }
