@@ -27,6 +27,7 @@ namespace EAS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            DataBase db = new DataBase();
             if (textBox1.Text == "")
             {
                 MessageBox.Show("请输入账号");
@@ -45,17 +46,17 @@ namespace EAS
                     }
                     else
                     {
-                        MessageBox.Show("账号错误！");
+                        MessageBox.Show("登陆失败！");
                         textBox1.Focus();   //用户名文本框获得输入光标焦点
                     }
                 }
                 else if (radioButton2.Checked)   //选择学生
                 {
-                    if (name == "student")
+                    if (db.select("select * from student where s_id=" + name).Read())
                     {
                         this.Close();
                         login = true;
-                        number = "root";
+                        number = name;
                         user = 2;
                     }
                     else
@@ -66,11 +67,11 @@ namespace EAS
                 }
                 else if (radioButton3.Checked)   //选择学生
                 {
-                    if (name == "teacher")
+                    if (db.select("select * from teacher where t_id=" + name).Read())
                     {
                         this.Close();
                         login = true;
-                        number = "root";
+                        number = name;
                         user = 3;
                     }
                     else

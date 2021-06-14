@@ -8,10 +8,10 @@ F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.csproj.CoreCompileInputs.cache
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.exe
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.pdb
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Form1.resources
-F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\MySql.Data.dll
 F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\BouncyCastle.Crypto.dll
 F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\Renci.SshNet.dll
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Student.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Teacher.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.csproj.CopyComplete
+F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\MySql.Data.dll

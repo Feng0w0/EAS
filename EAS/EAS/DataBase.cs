@@ -11,14 +11,14 @@ namespace EAS
     class DataBase
     {
         public MySqlConnection conn;
-        DataBase()
+        public DataBase()
         {
             string connString = "server=XinBall.top;database=hyf;uid=hyf;pwd=mysqlhyf";//数据连接字段
             conn = new MySqlConnection(connString);//之前SQLServer的连接名是SqlConnection
             try
             {
                 conn.Open();
-                MessageBox.Show("连接成功！");
+                //MessageBox.Show("连接成功！");
             }
             catch (MySqlException ex)
             {
@@ -29,23 +29,27 @@ namespace EAS
         {
             conn.Close();
         }
-        public int insert()
+        public int insert(string sql)
         {
-            string sql="";
+            //string sql="";
             MySqlCommand cmd = new MySqlCommand(sql, conn);
             return cmd.ExecuteNonQuery();
         }
-        public void delete()
+        public int delete(string sql)
         {
-
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            return cmd.ExecuteNonQuery();
         }
-        public void upgrade()
+        public int upgrade(string sql)
         {
-
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            return cmd.ExecuteNonQuery();
         }
-        public void select()
+        public MySqlDataReader select(string sql)
         {
-
+            MySqlCommand cmd = new MySqlCommand(sql, conn);
+            MySqlDataReader reader = cmd.ExecuteReader();
+            return reader;
         }
         public void close()
         {
