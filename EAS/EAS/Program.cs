@@ -21,7 +21,7 @@ namespace EAS
             Application.Run(loginInterface);
             if (loginInterface.login)
             {
-                if(loginInterface.user==1)Application.Run(new Manger(loginInterface.number));
+                if(loginInterface.user==1)Application.Run(new Manger.Manger(loginInterface.number));
                 else if (loginInterface.user == 2) { Application.Run(new Student(loginInterface.number)); }
                 else if (loginInterface.user == 3) { Application.Run(new Teacher(loginInterface.number)); }
             }

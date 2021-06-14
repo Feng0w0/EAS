@@ -8,20 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EAS
+namespace EAS.Manger
 {
-    public partial class Manger : Form
+    public partial class TeacherInfoMgr : Form
     {
-        private string number;
-        public Manger(string number)
+        public TeacherInfoMgr()
         {
-            this.number = number;
             InitializeComponent();
-        }
-
-        private void Manger_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

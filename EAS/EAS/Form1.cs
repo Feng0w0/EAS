@@ -85,6 +85,7 @@ namespace EAS
             {
                 MessageBox.Show("请选择登录身份");
             }
+            db.close();
         }
     }
 }

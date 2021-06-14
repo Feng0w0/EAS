@@ -57,11 +57,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Manger.cs">
+    <Compile Include="Manger\CourseInfoMgr.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Manger.Designer.cs">
+    <Compile Include="Manger\CourseInfoMgr.Designer.cs">
+      <DependentUpon>CourseInfoMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manger\Manger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manger\Manger.Designer.cs">
       <DependentUpon>Manger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manger\StudentInfoMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manger\StudentInfoMgr.Designer.cs">
+      <DependentUpon>StudentInfoMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manger\TeacherInfoMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manger\TeacherInfoMgr.Designer.cs">
+      <DependentUpon>TeacherInfoMgr.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -80,8 +98,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Manger.resx">
+    <EmbeddedResource Include="Manger\CourseInfoMgr.resx">
+      <DependentUpon>CourseInfoMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manger\Manger.resx">
       <DependentUpon>Manger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manger\StudentInfoMgr.resx">
+      <DependentUpon>StudentInfoMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manger\TeacherInfoMgr.resx">
+      <DependentUpon>TeacherInfoMgr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
