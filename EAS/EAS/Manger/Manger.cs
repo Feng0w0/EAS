@@ -61,5 +61,21 @@ namespace EAS.Manger
             cim.Show();
             this.panel2.Controls.Add(cim);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.panel2.Controls.Clear();
+            TeachInfoMgr tim = new TeachInfoMgr();
+            tim.Dock = System.Windows.Forms.DockStyle.Fill;
+            tim.FormBorderStyle = FormBorderStyle.None;
+            tim.TopLevel = false;
+            tim.Show();
+            this.panel2.Controls.Add(tim);
+        }
     }
 }

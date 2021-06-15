@@ -18,3 +18,4 @@ F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.Manger.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.StudentInfoMgr.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.CourseInfoMgr.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.TeacherInfoMgr.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.TeachInfoMgr.resources

@@ -75,6 +75,12 @@
     <Compile Include="Manger\StudentInfoMgr.Designer.cs">
       <DependentUpon>StudentInfoMgr.cs</DependentUpon>
     </Compile>
+    <Compile Include="Manger\TeachInfoMgr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manger\TeachInfoMgr.Designer.cs">
+      <DependentUpon>TeachInfoMgr.cs</DependentUpon>
+    </Compile>
     <Compile Include="Manger\TeacherInfoMgr.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manger\StudentInfoMgr.resx">
       <DependentUpon>StudentInfoMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manger\TeachInfoMgr.resx">
+      <DependentUpon>TeachInfoMgr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Manger\TeacherInfoMgr.resx">
       <DependentUpon>TeacherInfoMgr.cs</DependentUpon>

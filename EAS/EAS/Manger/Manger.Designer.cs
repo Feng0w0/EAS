@@ -60,6 +60,7 @@ namespace EAS.Manger
             this.button9.TabIndex = 9;
             this.button9.Text = "授课信息";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button4
             // 
@@ -69,6 +70,7 @@ namespace EAS.Manger
             this.button4.TabIndex = 8;
             this.button4.Text = "退出";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
