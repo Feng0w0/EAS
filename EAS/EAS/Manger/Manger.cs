@@ -17,17 +17,9 @@ namespace EAS.Manger
         {
             this.number = number;
             InitializeComponent();
+            //this.BackgroundImage = Image.FromFile("F:\\天龙在世\\Desktop\\EAS\\EAS\\EAS\\Manger\\1.jpg");
         }
 
-        private void Manger_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
       
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -77,5 +69,7 @@ namespace EAS.Manger
             tim.Show();
             this.panel2.Controls.Add(tim);
         }
+
+        
     }
 }

@@ -41,6 +41,7 @@ namespace EAS.Manger
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -54,9 +55,10 @@ namespace EAS.Manger
             // 
             // button9
             // 
+            this.button9.AutoSize = true;
             this.button9.Location = new System.Drawing.Point(38, 294);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.Size = new System.Drawing.Size(77, 25);
             this.button9.TabIndex = 9;
             this.button9.Text = "授课信息";
             this.button9.UseVisualStyleBackColor = true;
@@ -64,9 +66,10 @@ namespace EAS.Manger
             // 
             // button4
             // 
+            this.button4.AutoSize = true;
             this.button4.Location = new System.Drawing.Point(38, 374);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(75, 25);
             this.button4.TabIndex = 8;
             this.button4.Text = "退出";
             this.button4.UseVisualStyleBackColor = true;
@@ -74,9 +77,10 @@ namespace EAS.Manger
             // 
             // button3
             // 
+            this.button3.AutoSize = true;
             this.button3.Location = new System.Drawing.Point(38, 214);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(77, 25);
             this.button3.TabIndex = 7;
             this.button3.Text = "课程信息";
             this.button3.UseVisualStyleBackColor = true;
@@ -84,9 +88,10 @@ namespace EAS.Manger
             // 
             // button2
             // 
+            this.button2.AutoSize = true;
             this.button2.Location = new System.Drawing.Point(38, 134);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(77, 25);
             this.button2.TabIndex = 6;
             this.button2.Text = "教师信息";
             this.button2.UseVisualStyleBackColor = true;
@@ -94,9 +99,10 @@ namespace EAS.Manger
             // 
             // button1
             // 
+            this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(38, 54);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(77, 25);
             this.button1.TabIndex = 5;
             this.button1.Text = "学生信息";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,6 +110,7 @@ namespace EAS.Manger
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(150, 0);
             this.panel2.Name = "panel2";
@@ -118,10 +125,12 @@ namespace EAS.Manger
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Manger";
             this.Text = "Manger";
-            this.Load += new System.EventHandler(this.Manger_Load);
             this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }

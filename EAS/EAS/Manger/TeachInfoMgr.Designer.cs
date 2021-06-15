@@ -148,9 +148,10 @@ namespace EAS.Manger
             // 
             // button7
             // 
+            this.button7.AutoSize = true;
             this.button7.Location = new System.Drawing.Point(61, 364);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(77, 25);
             this.button7.TabIndex = 24;
             this.button7.Text = "删除信息";
             this.button7.UseVisualStyleBackColor = true;
@@ -158,9 +159,10 @@ namespace EAS.Manger
             // 
             // button6
             // 
+            this.button6.AutoSize = true;
             this.button6.Location = new System.Drawing.Point(61, 304);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(77, 25);
             this.button6.TabIndex = 23;
             this.button6.Text = "添加信息";
             this.button6.UseVisualStyleBackColor = true;
@@ -227,9 +229,10 @@ namespace EAS.Manger
             // 
             // button1
             // 
+            this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(385, 13);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 25);
             this.button1.TabIndex = 0;
             this.button1.Text = "查询";
             this.button1.UseVisualStyleBackColor = true;
@@ -237,6 +240,7 @@ namespace EAS.Manger
             // 
             // dataGridView3
             // 
+            this.dataGridView3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView3.Location = new System.Drawing.Point(250, 50);
             this.dataGridView3.Name = "dataGridView3";
@@ -248,6 +252,7 @@ namespace EAS.Manger
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Location = new System.Drawing.Point(10, 50);
             this.dataGridView2.Name = "dataGridView2";
@@ -268,6 +273,7 @@ namespace EAS.Manger
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(10, 10);
             this.dataGridView1.Name = "dataGridView1";
@@ -277,7 +283,7 @@ namespace EAS.Manger
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // TakeInfoMgr
+            // TeachInfoMgr
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -286,7 +292,7 @@ namespace EAS.Manger
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TakeInfoMgr";
+            this.Name = "TeachInfoMgr";
             this.Text = "TakeInfoMgr";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

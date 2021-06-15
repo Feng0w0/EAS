@@ -38,6 +38,7 @@ namespace EAS.Manger
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@ namespace EAS.Manger
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -67,6 +67,7 @@ namespace EAS.Manger
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(20, 20);
             this.dataGridView1.Name = "dataGridView1";
@@ -93,10 +94,11 @@ namespace EAS.Manger
             // 
             // button8
             // 
+            this.button8.AutoSize = true;
             this.button8.Location = new System.Drawing.Point(377, 31);
             this.button8.Margin = new System.Windows.Forms.Padding(3, 3, 20, 3);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.Size = new System.Drawing.Size(75, 25);
             this.button8.TabIndex = 12;
             this.button8.Text = "查询";
             this.button8.UseVisualStyleBackColor = true;
@@ -152,6 +154,15 @@ namespace EAS.Manger
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(180, 450);
             this.panel2.TabIndex = 2;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(61, 138);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 23);
+            this.comboBox1.TabIndex = 33;
             // 
             // label4
             // 
@@ -212,9 +223,10 @@ namespace EAS.Manger
             // 
             // button7
             // 
+            this.button7.AutoSize = true;
             this.button7.Location = new System.Drawing.Point(61, 364);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.Size = new System.Drawing.Size(77, 25);
             this.button7.TabIndex = 24;
             this.button7.Text = "删除信息";
             this.button7.UseVisualStyleBackColor = true;
@@ -222,9 +234,10 @@ namespace EAS.Manger
             // 
             // button6
             // 
+            this.button6.AutoSize = true;
             this.button6.Location = new System.Drawing.Point(61, 304);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.Size = new System.Drawing.Size(77, 25);
             this.button6.TabIndex = 23;
             this.button6.Text = "添加信息";
             this.button6.UseVisualStyleBackColor = true;
@@ -232,22 +245,14 @@ namespace EAS.Manger
             // 
             // button5
             // 
+            this.button5.AutoSize = true;
             this.button5.Location = new System.Drawing.Point(61, 244);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.Size = new System.Drawing.Size(77, 25);
             this.button5.TabIndex = 22;
             this.button5.Text = "修改信息";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(61, 138);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 23);
-            this.comboBox1.TabIndex = 33;
             // 
             // StudentInfoMgr
             // 
