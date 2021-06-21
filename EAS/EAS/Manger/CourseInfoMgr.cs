@@ -154,7 +154,8 @@ namespace EAS.Manger
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            string id = textBox1.Text;
+            //int id = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             DataBase db = new DataBase();
             try
             {
