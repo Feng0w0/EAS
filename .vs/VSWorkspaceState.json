@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\EAS"
+    "\\EAS",
+    "\\EAS\\EAS"
   ],
+  "SelectedNode": "\\EAS\\EAS\\Properties",
   "PreviewInSolutionExplorer": false
 }

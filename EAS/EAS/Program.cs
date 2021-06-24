@@ -23,7 +23,7 @@ namespace EAS
             {
                 if(loginInterface.user==1)Application.Run(new Manger.Manger(loginInterface.number));
                 else if (loginInterface.user == 2) { Application.Run(new Student.Student(loginInterface.number)); }
-                else if (loginInterface.user == 3) { Application.Run(new Teacher(loginInterface.number)); }
+                else if (loginInterface.user == 3) { Application.Run(new teacher.Teacher(loginInterface.number)); }
             }
         }
     }

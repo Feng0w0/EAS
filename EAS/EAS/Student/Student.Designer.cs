@@ -114,7 +114,7 @@ namespace EAS.Student
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Student";
-            this.Text = "Student";
+            this.Text = "Student ";
             this.Load += new System.EventHandler(this.Student_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

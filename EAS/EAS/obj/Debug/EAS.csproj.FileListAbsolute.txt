@@ -57,9 +57,11 @@ C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Properties.Resources.r
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.Student.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.studentin.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.studenttake.resources
-C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Teacher.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.GenerateResource.cache
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.CoreCompileInputs.cache
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.CopyComplete
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.exe
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.pdb
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.course.resources
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.personal.resources
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.Teacher.resources
