@@ -35,8 +35,10 @@ C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Manger.StudentInfoMgr.
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Manger.TeachInfoMgr.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Manger.TeacherInfoMgr.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Properties.Resources.resources
-C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Teacher.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.GenerateResource.cache
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.CoreCompileInputs.cache
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.csproj.CopyComplete
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.studentin.resources
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.Student.resources
+C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.Student.studenttake.resources
