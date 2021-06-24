@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EAS.Student;
-
+using System.Text.RegularExpressions;
 namespace EAS.Student
 {
     public partial class Student : Form
@@ -67,5 +67,40 @@ namespace EAS.Student
         {
 
         }
+
+        //private void button4_Click(object sender, EventArgs e)
+        //{
+
+        //    DataBase db = new DataBase();
+
+        //    string[] arr = new string[textBox1.Lines.Length];
+        //    for (int i = 0; i < textBox1.Lines.Length; i++)
+        //    {
+        //        arr[i] = textBox1.Lines[i];
+        //        string[] test = new string[5];
+        //        string[] sArray = arr[i].Split(' ');
+        //        string[] sArray = Regex.Split(arr[i], "\\s+");
+        //        string sql = "insert into student(s_id,s_name,d_name,class) values('{0}','{1}','{2}','{3}')";
+        //        int tt = 0;
+        //        foreach (string j in sArray)
+        //        {
+        //            test[tt] = j.ToString();
+        //            tt++;
+        //        }
+
+        //        填充占位符
+        //        sql = string.Format(sql, test[0], test[1], test[3], test[4]);
+        //        db.insert(sql);
+        //    }
+
+
+
+
+       // }
+
+        //private void textBox1_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }

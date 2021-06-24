@@ -48,6 +48,10 @@ namespace EAS.Student
                 sda.Fill(ds);
                 //设置表格控件的DataSource属性
                 dataGridView1.DataSource = ds.Tables[0];
+                dataGridView1.Columns[0].HeaderText = "课程号";
+                dataGridView1.Columns[1].HeaderText = "课程名";
+                dataGridView1.Columns[2].HeaderText = "专业";
+                dataGridView1.Columns[3].HeaderText = "学分";
             }
             else
             {
@@ -64,6 +68,10 @@ namespace EAS.Student
                 sda.Fill(ds);
                 //设置表格控件的DataSource属性
                 dataGridView1.DataSource = ds.Tables[0];
+                dataGridView1.Columns[0].HeaderText = "课程号";
+                dataGridView1.Columns[1].HeaderText = "课程名";
+                dataGridView1.Columns[2].HeaderText = "专业";
+                dataGridView1.Columns[3].HeaderText = "学分";
             }
             this.button3.Visible = false;
             this.button4.Visible = true;
@@ -84,6 +92,9 @@ namespace EAS.Student
             sda.Fill(ds);
             //设置表格控件的DataSource属性
             dataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.Columns[0].HeaderText = "课程号";
+            dataGridView1.Columns[1].HeaderText = "学号";
+            dataGridView1.Columns[2].HeaderText = "分数";
             this.button4.Visible = false;
             this.button3.Visible = true;
 

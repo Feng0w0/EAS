@@ -34,8 +34,8 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -45,7 +45,7 @@
             this.button1.AutoSize = true;
             this.button1.Location = new System.Drawing.Point(39, 27);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 25);
+            this.button1.Size = new System.Drawing.Size(107, 30);
             this.button1.TabIndex = 0;
             this.button1.Text = "已选课程列表";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,7 +66,7 @@
             this.button2.AutoSize = true;
             this.button2.Location = new System.Drawing.Point(207, 27);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(77, 25);
+            this.button2.Size = new System.Drawing.Size(100, 30);
             this.button2.TabIndex = 2;
             this.button2.Text = "课程列表";
             this.button2.UseVisualStyleBackColor = true;
@@ -104,27 +104,27 @@
             this.panel1.Size = new System.Drawing.Size(531, 100);
             this.panel1.TabIndex = 5;
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(108, 29);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "退课";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(108, 29);
+            this.button4.Location = new System.Drawing.Point(185, 29);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(100, 30);
             this.button4.TabIndex = 1;
             this.button4.Text = "选课";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Visible = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(185, 29);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(100, 30);
+            this.button3.TabIndex = 0;
+            this.button3.Text = "退课";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // studenttake
             // 
