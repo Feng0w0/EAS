@@ -18,6 +18,12 @@ namespace EAS.Manger
             this.number = number;
             InitializeComponent();
             //this.BackgroundImage = Image.FromFile("F:\\天龙在世\\Desktop\\EAS\\EAS\\EAS\\Manger\\1.jpg");
+            StudentInfoMgr sim = new StudentInfoMgr();
+            sim.Dock = System.Windows.Forms.DockStyle.Fill;
+            sim.FormBorderStyle = FormBorderStyle.None;
+            sim.TopLevel = false;
+            sim.Show();
+            this.panel2.Controls.Add(sim);
         }
 
       
@@ -70,6 +76,9 @@ namespace EAS.Manger
             this.panel2.Controls.Add(tim);
         }
 
-        
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
