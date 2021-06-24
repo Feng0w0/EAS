@@ -23,6 +23,13 @@ namespace EAS.Student
         private void Student_Load(object sender, EventArgs e)
         {
             this.label2.Text = this.number;
+            this.panel1.Controls.Clear();
+            studentin sim = new studentin(this.number);
+            sim.Dock = System.Windows.Forms.DockStyle.Fill;
+            sim.FormBorderStyle = FormBorderStyle.None;
+            sim.TopLevel = false;
+            sim.Show();
+            this.panel1.Controls.Add(sim);
         }
 
    
