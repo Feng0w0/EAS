@@ -62,5 +62,10 @@ namespace EAS.Student
             st.Show();
             this.panel1.Controls.Add(st);
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

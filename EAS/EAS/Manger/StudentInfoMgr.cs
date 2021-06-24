@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -210,29 +211,35 @@ namespace EAS.Manger
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int id = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-            DataBase db = new DataBase();
-            try
+            if(this.dataGridView1.RowCount==0)
+                MessageBox.Show("删除失败！");
+            else
             {
-                string sql = "delete from student where s_id='{0}'";
-                //填充占位符
-                sql = string.Format(sql, id);
-                db.delete(sql);
-                MessageBox.Show("删除成功！");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("删除失败！" + ex.Message);
-            }
-            finally
-            {
-                if (db.conn != null)
+                int id = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+                DataBase db = new DataBase();
+                try
                 {
-                    //关闭数据库连接
-                    db = null;
-                    QueryAllStudent();
+                    string sql = "delete from student where s_id='{0}'";
+                    //填充占位符
+                    sql = string.Format(sql, id);
+                    db.delete(sql);
+                    MessageBox.Show("删除成功！");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("删除失败！" + ex.Message);
+                }
+                finally
+                {
+                    if (db.conn != null)
+                    {
+                        //关闭数据库连接
+                        db = null;
+                        QueryAllStudent();
+                    }
                 }
             }
+           
         }
     }
 }

@@ -21,7 +21,16 @@ namespace EAS.Student
 
         private void studenttake_Load(object sender, EventArgs e)
         {
-
+            //设置数据表格为只读
+            dataGridView1.ReadOnly = true;
+            //不允许添加行
+            dataGridView1.AllowUserToAddRows = false;
+            //背景为白色
+            dataGridView1.BackgroundColor = Color.White;
+            //只允许选中单行
+            dataGridView1.MultiSelect = false;
+            //整行选中
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,28 +92,45 @@ namespace EAS.Student
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
-            DataBase db = new DataBase();
-            try
+            if (this.dataGridView1.RowCount == 0)
+                MessageBox.Show("删除失败！");
+            else
             {
-                string sql = "delete from take where c_id='{0}'";
-                //填充占位符
-                sql = string.Format(sql, id);
-                db.delete(sql);
-                MessageBox.Show("删除成功！");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("删除失败！" + ex.Message);
-            }
-            finally
-            {
-                if (db.conn != null)
+                string id = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                DataBase db = new DataBase();
+                try
                 {
-                    //关闭数据库连接
-                    db = null;
+                    string sql = "delete from take where c_id='{0}'";
+                    //填充占位符
+                    sql = string.Format(sql, id);
+                    db.delete(sql);
+                    MessageBox.Show("删除成功！");
+                    //更新信息
+                    sql = "select * from take where s_id like '%{0}%' and grade=0";
+                    sql = string.Format(sql, this.number);
+                    //创建SqlDataAdapter类的对象
+                    MySqlDataAdapter sda = new MySqlDataAdapter(sql, db.conn);
+                    //创建DataSet类的对象
+                    DataSet ds = new DataSet();
+                    //使用SqlDataAdapter对象sda将查新结果填充到DataSet对象ds中
+                    sda.Fill(ds);
+                    //设置表格控件的DataSource属性
+                    dataGridView1.DataSource = ds.Tables[0];
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("删除失败！" + ex.Message);
+                }
+                finally
+                {
+                    if (db.conn != null)
+                    {
+                        //关闭数据库连接
+                        db = null;
+                    }
                 }
             }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -118,6 +144,7 @@ namespace EAS.Student
                 sql = string.Format(sql, id,this.number);
                 db.insert(sql);
                 MessageBox.Show("选课成功！");
+
             }
             catch (Exception ex)
             {
