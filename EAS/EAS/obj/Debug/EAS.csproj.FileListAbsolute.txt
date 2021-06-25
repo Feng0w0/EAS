@@ -10,8 +10,6 @@ F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.pdb
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Form1.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\BouncyCastle.Crypto.dll
 F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\Renci.SshNet.dll
-F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Student.resources
-F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Teacher.resources
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.csproj.CopyComplete
 F:\天龙在世\Desktop\EAS\EAS\EAS\bin\Debug\MySql.Data.dll
 F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Manger.Manger.resources
@@ -65,3 +63,9 @@ C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.pdb
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.course.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.personal.resources
 C:\Users\张家华\source\repos\EAS\EAS\EAS\obj\Debug\EAS.teacher.Teacher.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Student.Student.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Student.studentin.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.Student.studenttake.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.teacher.course.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.teacher.personal.resources
+F:\天龙在世\Desktop\EAS\EAS\EAS\obj\Debug\EAS.teacher.Teacher.resources
