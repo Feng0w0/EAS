@@ -74,9 +74,8 @@ namespace EAS.Student
             {
                 DataBase db = new DataBase();
                 string sql = "";
-                sql = "select *from course where d_name =(select d_name from student where s_id like '%{0}%')";
+                sql = "select *from course where d_name = (select d_name from student where s_id like '%{0}%')";
                 sql = string.Format(sql, this.number);
-                sql = "select * from course";
                 //创建SqlDataAdapter类的对象
                 MySqlDataAdapter sda = new MySqlDataAdapter(sql, db.conn);
                 //创建DataSet类的对象
@@ -186,6 +185,11 @@ namespace EAS.Student
                     db = null;
                 }
             }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            button2_Click(sender,e);
         }
     }
 }
