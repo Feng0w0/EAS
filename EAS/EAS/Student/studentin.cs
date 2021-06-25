@@ -70,7 +70,7 @@ namespace EAS.Student
             
             DataBase db = new DataBase();
             string sql = "";
-            sql = "select * from take where s_id like '%{0}%'";
+            sql = "select * from take where s_id like '%{0}%'and grade=0";
             sql = string.Format(sql, this.number);
             //创建SqlDataAdapter类的对象
             MySqlDataAdapter sda = new MySqlDataAdapter(sql, db.conn);
@@ -99,6 +99,9 @@ namespace EAS.Student
             sda.Fill(ds);
             //设置表格控件的DataSource属性
             dataGridView1.DataSource = ds.Tables[0];
+            dataGridView1.Columns[0].HeaderText = "课程号";
+            dataGridView1.Columns[1].HeaderText = "学号";
+            dataGridView1.Columns[2].HeaderText = "分数";
         }
     }
 }

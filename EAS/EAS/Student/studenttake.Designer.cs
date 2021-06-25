@@ -67,9 +67,9 @@
             this.button2.AutoSize = true;
             this.button2.Location = new System.Drawing.Point(207, 27);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(100, 30);
+            this.button2.Size = new System.Drawing.Size(107, 30);
             this.button2.TabIndex = 2;
-            this.button2.Text = "课程列表";
+            this.button2.Text = "未选课程列表";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -84,6 +84,7 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "所有学院";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // radioButton2
             // 
