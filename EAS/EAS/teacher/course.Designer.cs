@@ -167,9 +167,8 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(566, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 15);
+            this.label1.Size = new System.Drawing.Size(0, 15);
             this.label1.TabIndex = 17;
-            this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -186,9 +185,8 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(566, 32);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 15);
+            this.label4.Size = new System.Drawing.Size(0, 15);
             this.label4.TabIndex = 15;
-            this.label4.Text = "label4";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
@@ -205,9 +203,8 @@
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(563, 1);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(63, 15);
+            this.label10.Size = new System.Drawing.Size(0, 15);
             this.label10.TabIndex = 13;
-            this.label10.Text = "label10";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label11
@@ -233,9 +230,8 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(563, 96);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(63, 15);
+            this.label13.Size = new System.Drawing.Size(0, 15);
             this.label13.TabIndex = 22;
-            this.label13.Text = "label13";
             this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // textBox2
@@ -251,9 +247,8 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(566, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 15);
+            this.label8.Size = new System.Drawing.Size(0, 15);
             this.label8.TabIndex = 24;
-            this.label8.Text = "label8";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label14
