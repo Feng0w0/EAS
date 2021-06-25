@@ -189,8 +189,10 @@ namespace EAS.Manger
 
         private void button7_Click(object sender, EventArgs e)
         {
-            int tid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
-            int cid = int.Parse(dataGridView1.SelectedRows[0].Cells[3].Value.ToString());
+            string tid = textBox1.Text;
+            string cid = textBox3.Text;
+            //int tid = int.Parse(dataGridView1.SelectedRows[0].Cells[0].Value.ToString());
+            //int cid = int.Parse(dataGridView1.SelectedRows[0].Cells[3].Value.ToString());
             DataBase db = new DataBase();
             try
             {
@@ -198,7 +200,7 @@ namespace EAS.Manger
                 //填充占位符
                 sql = string.Format(sql, cid, tid);
                 db.delete(sql);
-                MessageBox.Show("删除成功！");
+                //MessageBox.Show("删除成功！");
             }
             catch (Exception ex)
             {

@@ -8,10 +8,11 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>EAS</RootNamespace>
     <AssemblyName>EAS</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -89,16 +90,40 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student.cs">
+    <Compile Include="Student\Student.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student.Designer.cs">
+    <Compile Include="Student\Student.Designer.cs">
       <DependentUpon>Student.cs</DependentUpon>
     </Compile>
-    <Compile Include="Teacher.cs">
+    <Compile Include="Student\studentin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Teacher.Designer.cs">
+    <Compile Include="Student\studentin.Designer.cs">
+      <DependentUpon>studentin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\studenttake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\studenttake.Designer.cs">
+      <DependentUpon>studenttake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\course.Designer.cs">
+      <DependentUpon>course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\personal.Designer.cs">
+      <DependentUpon>personal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacher\Teacher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacher\Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
@@ -128,10 +153,22 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Student.resx">
+    <EmbeddedResource Include="Student\Student.resx">
       <DependentUpon>Student.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Teacher.resx">
+    <EmbeddedResource Include="Student\studentin.resx">
+      <DependentUpon>studentin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\studenttake.resx">
+      <DependentUpon>studenttake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\course.resx">
+      <DependentUpon>course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\personal.resx">
+      <DependentUpon>personal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacher\Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
