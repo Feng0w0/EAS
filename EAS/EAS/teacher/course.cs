@@ -60,7 +60,7 @@ namespace EAS.teacher
             DataBase db = new DataBase();
             try
             {
-                string sql = "select * from course where course.c_id=(select teach.c_id from teach where teach.t_id='{0}')";
+                string sql = "select * from course where course.c_id in (select teach.c_id from teach where teach.t_id='{0}')";
                 sql = string.Format(sql, number);
                 //创建SqlDataAdapter类的对象
                 MySqlDataAdapter sda = new MySqlDataAdapter(sql, db.conn);
