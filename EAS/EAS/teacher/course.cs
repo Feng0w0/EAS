@@ -53,7 +53,13 @@ namespace EAS.teacher
             string cc;
             cc = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
              QueryAllstudent(cc);
-         
+            label4.Text = "";
+            textBox2.Text = "";
+            label10.Text = "";
+            label1.Text = "";
+            label13.Text = "";
+            label8.Text = "";
+
         }
         private void QueryAllcourse()
         {
@@ -295,9 +301,11 @@ namespace EAS.teacher
         private void button1_Click(object sender, EventArgs e)
         {
             double g=0;
+            string cid;
+            cid= dataGridView2.SelectedRows[0].Cells[0].Value.ToString();
             DataBase db = new DataBase();
-            string sql = "select * from take where s_id='{0}'";
-            sql = string.Format(sql, label4.Text);
+            string sql = "select * from take where s_id='{0}' and c_id='{1}'";
+            sql = string.Format(sql, label4.Text,cid);
             try
             {
                 MySqlDataReader reader = db.select(sql);
@@ -328,9 +336,9 @@ namespace EAS.teacher
             try
             {
                 double newg = Convert.ToDouble(textBox2.Text);
-                string sql2 = "update take set grade={0}  where s_id='{1}'";
+                string sql2 = "update take set grade={0}  where s_id='{1}'and c_id='{2}'";
                 //填充占位符
-                sql2 = string.Format(sql2, newg, label4.Text);
+                sql2 = string.Format(sql2, newg, label4.Text,cid);
                 dc.upgrade(sql2);
                 if (g >= 60 && newg < 60)
                 {
@@ -351,6 +359,9 @@ namespace EAS.teacher
                     dc.upgrade(sql3);
                 }
                 MessageBox.Show("修改成功！");
+                string cc;
+                cc = dataGridView1.SelectedRows[0].Cells[0].Value.ToString();
+                QueryAllstudent(cc);
             }
             catch (Exception ex)
             {

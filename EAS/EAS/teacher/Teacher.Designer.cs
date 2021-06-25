@@ -30,10 +30,10 @@ namespace EAS.teacher
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,6 +50,16 @@ namespace EAS.teacher
             this.panel1.Size = new System.Drawing.Size(150, 450);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(11, 75);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(120, 27);
+            this.button2.TabIndex = 0;
+            this.button2.Text = "个人信息";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -84,16 +94,6 @@ namespace EAS.teacher
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(11, 75);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 27);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "个人信息";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
             // Teacher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -101,6 +101,8 @@ namespace EAS.teacher
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Teacher";
             this.Text = "Teacher";
             this.Load += new System.EventHandler(this.Teacher_Load);
